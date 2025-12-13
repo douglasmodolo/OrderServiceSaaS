@@ -9,8 +9,6 @@ A estrutura de uma mensagem de commit deve ser:
 [optional body]
 
 [optional footer(s)]
-
-
 ---
 
 ## 1. Tipos Comuns (`<type>`)

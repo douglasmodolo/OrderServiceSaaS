@@ -4,11 +4,10 @@ Este projeto segue a especificação **Conventional Commits**. Este padrão defi
 
 A estrutura de uma mensagem de commit deve ser:
 
-<type>(<scope>): <subject>
-
+**<type>**(**<scope>**) **:** **<subject>**
 [optional body]
-
 [optional footer(s)]
+
 ---
 
 ## 1. Tipos Comuns (`<type>`)

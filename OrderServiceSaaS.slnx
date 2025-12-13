@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="OS.Api/OS.Api.csproj" />
+  <Project Path="OS.Application/OS.Application.csproj" />
+  <Project Path="OS.CrossCutting/OS.CrossCutting.csproj" />
+  <Project Path="OS.Domain/OS.Domain.csproj" />
+  <Project Path="OS.Infrastructure/OS.Infrastructure.csproj" />
+</Solution>

@@ -2,12 +2,6 @@
 
 Este projeto segue a especificação **Conventional Commits**. Este padrão define um conjunto de regras para criar um histórico de commits explícito, o que facilita a automação de ferramentas de versionamento e geração de *changelogs*.
 
-A estrutura de uma mensagem de commit deve ser:
-
-**<type>**(**<scope>**) **:** **<subject>**
-[optional body]
-[optional footer(s)]
-
 ---
 
 ## 1. Tipos Comuns (`<type>`)

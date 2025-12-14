@@ -18,7 +18,6 @@
 
   <ItemGroup>
     <Folder Include="Features\OrderServices\Dtos\" />
-    <Folder Include="Features\OrderServices\Queries\" />
   </ItemGroup>
 
 </Project>

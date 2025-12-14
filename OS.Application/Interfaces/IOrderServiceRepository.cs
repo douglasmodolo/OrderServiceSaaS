@@ -5,6 +5,7 @@ namespace OS.Application.Interfaces
     public interface IOrderServiceRepository
     {
         Task<OrderService> AddAsync(OrderService order);
-        // Outros métodos: GetByIdAsync, UpdateAsync, etc.
+        Task<List<OrderService>> GetAllAsync();
+        Task<OrderService> GetByIdAsync(Guid id);
     }
 }

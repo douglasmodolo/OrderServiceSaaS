@@ -19,5 +19,19 @@ namespace OS.Infrastructure.Persistence
             await _context.SaveChangesAsync();
             return order;
         }
+
+        public async Task<List<OrderService>> GetAllAsync()
+        {
+            return await _context.OrderServices
+                .AsNoTracking()
+                .ToListAsync();
+        }
+
+        public async Task<OrderService?> GetByIdAsync(Guid id)
+        {
+            return await _context.OrderServices
+                .AsNoTracking()
+                .FirstOrDefaultAsync(os => os.Id == id);
+        }
     }
 }

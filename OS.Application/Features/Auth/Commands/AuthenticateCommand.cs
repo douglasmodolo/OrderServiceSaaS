@@ -29,13 +29,13 @@ namespace OS.Application.Features.Auth.Commands
             }
 
             var userId = "user-test-123";
-            var tenantId = Guid.Parse("A1A1A1A1-AAAA-BBBB-CCCC-123456789012");
+            var tenantId = Guid.Parse("a1a1a1a1-aaaa-bbbb-cccc-123456789012");
 
             var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.NameIdentifier, userId),
                 new Claim(ClaimTypes.Email, request.Email),
-                new Claim("tenantid", tenantId.ToString()),
+                new Claim("tenantid", tenantId.ToString().ToLowerInvariant()),
             };
 
             var token = _jwtService.GenerateToken(claims);

@@ -47,8 +47,10 @@ namespace OS.Infrastructure.Persistence
         private static void ApplyTenantFilterToEntity<T>(ModelBuilder modelBuilder, ITenantContext tenantContext)
             where T : class, IMustHaveTenant
         {
+            var currentTenantId = tenantContext.TenantId.ToString().ToUpper();
+
             modelBuilder.Entity<T>().HasQueryFilter(
-                e => e.TenantId == tenantContext.TenantId
+                e => e.TenantId.ToString().ToUpper() == currentTenantId
             );
         }
 

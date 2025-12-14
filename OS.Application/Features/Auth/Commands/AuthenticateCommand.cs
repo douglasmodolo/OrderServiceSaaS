@@ -1,8 +1,8 @@
 ﻿using MediatR;
 using OS.Application.Features.Auth.Dtos;
-using OS.Application.Interfaces;
 using System.Security.Claims;
 using OS.Domain.Exceptions;
+using OS.Application.Interfaces.Services;
 
 namespace OS.Application.Features.Auth.Commands
 {

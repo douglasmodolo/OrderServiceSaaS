@@ -1,5 +1,5 @@
 ﻿using MediatR;
-using OS.Application.Interfaces;
+using OS.Application.Interfaces.Repositories;
 using OS.Domain.Entities;
 
 namespace OS.Application.Features.OrderServices.Queries
